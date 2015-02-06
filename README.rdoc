@@ -1,28 +1,13 @@
-== README
+= Rails Fullscreen Gallery
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Demo Ruby on Rails app built to showcase an image slideshow with a fullscreen background.
 
-Things you may want to cover:
+Check it out here: <a href="https://rails-fullscreen-gallery.herokuapp.com" target="_blank">Demo</a>
 
-* Ruby version
+Using:
+* <a href="https://github.com/twbs/bootstrap-sass" target="_blank">twbs/bootstrap-sass</a>
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* <a href="https://github.com/carrierwaveuploader/carrierwave" target="_blank">carrierwaveuploader/carrierwave</a>
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+== Thank you.
