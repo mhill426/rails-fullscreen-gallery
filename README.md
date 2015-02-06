@@ -2,7 +2,7 @@
 
 Demo Ruby on Rails app built to showcase an image slideshow with a fullscreen background.
 
-Check it out here: [Demo](https://rails-fullscreen-gallery.herokuapp.com)
+Check it out here: [Demo](http://rails-fullscreen-gallery.herokuapp.com)
 
 Using:
 - [twbs/bootstrap-sass](https://github.com/twbs/bootstrap-sass)
