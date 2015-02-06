@@ -1,0 +1,157 @@
+@import 'bootstrap';
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+#outer-background-container {
+  display:block;
+  background: #fff;
+  min-width:100%;
+  min-height:100%;
+  top:0;
+  left:0;
+  position: fixed;
+  z-index:-2;
+  background-size: cover;
+}
+.background-image-overlay-light {
+	min-width:100%;
+  min-height:100%;
+  position: absolute;
+  background: rgba(250, 250, 250, .25);
+} 
+.background-image-overlay-darken {
+	min-width:100%;
+  min-height:100%;
+  position: absolute;
+  background: rgba(0, 0, 0, .25);
+}  
+.blur { 
+  -webkit-filter: blur(4px); 
+  -moz-filter: blur(4px); 
+  filter: blur(4px); 
+}
+.nav{
+	position: absolute;
+  left: 1;
+  font-size: 2em;
+  color: #393939;
+  padding: 15px;
+}
+.nav:hover{
+  color: #333;
+}
+footer{
+	padding: 12px 0;
+	font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #393939;
+  text-align: center;
+}
+footer a{
+  color: #393939;
+}
+footer a:hover{
+	font-weight: 600;
+	color: #333;
+}	
+
+/* GALLERY
+-------------------------------------------------- */
+.gal-img{
+	height: 300px;
+	overflow: hidden;
+  background: #FFFAFA;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top:0;
+  left:0;
+  margin: 0 0 !important;
+  padding: 0 0 !important;
+  border: 1px solid #fff;
+}
+.gallery {
+	margin: 0 0 !important;
+  padding: 0 0 !important;
+	top:0;
+  left:0;
+}	
+.caption {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: rgba(51, 51, 51, 0.5);
+  width: 100%;
+  height: 100%;
+  padding-top: 20%;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 2em;
+  color: #fff;
+  z-index: 2;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.gal-img:hover .caption {
+  top: 0%;
+  text-decoration: none;
+  color: #fff;
+}
+
+/* GALLERY CAROUSEL
+-------------------------------------------------- */
+#carousel-gallery {
+  margin-top: 40px;
+	-webkit-box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5); 
+  -moz-box-shadow:    4px 4px 4px 4px rgba(0, 0, 0, 0.5); 
+  box-shadow:         4px 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-caption {
+  z-index: 10;
+	color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 4.5em;
+  margin-bottom: 30%;
+}
+
+#carousel-gallery > .carousel > .item {
+  height: 100%;
+  background-color: #777;
+}
+#carousel-gallery > .carousel-inner > .item > img {
+  position: relative;
+  min-width: 100%; 
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 1200px) {
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  
+}
+@media only screen and (max-width: 959px) {
+	.carousel-caption {
+	  font-size: 3.5em;
+	  margin-bottom: 15%;
+	}
+}  
+@media only screen and (max-width: 767px) {
+	#carousel-gallery {
+	  margin-top: 60px;
+	}
+	.carousel-caption {
+	  font-size: 3em;
+	}
+}

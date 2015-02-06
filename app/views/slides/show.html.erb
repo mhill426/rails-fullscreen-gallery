@@ -1,0 +1,33 @@
+<div id="outer-background-container" class="blur" style="background-image:url(<%= @slide.image.url %>);"></div>
+
+<div class="background-image-overlay-light">
+<%= link_to '<i class="glyphicon glyphicon-th"></i>'.html_safe, root_path, class: "nav" %>
+	<div class="container"><p id="notice"><%= notice %></p>
+		<div class="col-xs-12 col-sm-10 col-sm-offset-1">
+			<div id="carousel-gallery" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner" role="listbox">
+						<div class="item active">
+							<%= image_tag @slide.image %>
+							<div class="carousel-caption">
+						    <p><%= @slide.caption %></p>
+						  </div>
+						</div>
+					</div>
+					<!-- Controls -->
+					  <% if @slide.id == Slide.last.id %>
+					  	<%= link_to '<i class="glyphicon glyphicon-chevron-left"></i>'.html_safe, @slide.first, class: "left carousel-control" %>
+					  <% else %>
+							<%= link_to '<i class="glyphicon glyphicon-chevron-left"></i>'.html_safe, @slide.next, class: "left carousel-control" %>
+						<% end %>
+
+					  <% if @slide.id == Slide.first.id %>
+							<%= link_to '<i class="glyphicon glyphicon-chevron-right"></i>'.html_safe, @slide.last, class: "right carousel-control" %>
+						<% else %>
+							<%= link_to '<i class="glyphicon glyphicon-chevron-right"></i>'.html_safe, @slide.previous, class: "right carousel-control" %>
+						<% end %>
+
+			</div><!-- .carousel -->
+		</div><!-- .col-xs-12 -->
+		<footer class="col-xs-12"><a href="https://github.com/mhill426/rails-fullscreen-gallery" target="_blank">Open Source</a> by <a href="http://matthewdhill.com" target="_blank">Matthew D. Hill</a></footer>
+	</div><!-- .container -->
+</div><!-- overlay-light -->
